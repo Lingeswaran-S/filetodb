@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+<title>csv</title>
+</head>
+<body>
+	<div class="upload-container">
+		<div class="upload-header">
+			<h2>Lingeswaran S, Erode Sengunthar Engineering College </br> CSV to Database Project for Grootan</h2>
+			<div class="upload-response">
+				<br>
+				<br>
+				<div id="singleFileUploadProcess" style="color: blue"></div>
+				<div id="singleFileUploadError" style="color: red"></div>
+				<div id="singleFileUploadSuccess" style="color: green"></div>
+				<div id="table" style ="display: none">Click <a href="http://localhost:8080/h2-console/" target="_blank" rel="noopener noreferrer">here </a> to view table</div>
+			</div>
+		</div>
+		<div class="upload-content">
+			<div class="single-upload">
+				<h3>Please upload a '.csv' File</h3>
+				<form id="singleUploadForm" name="singleUploadForm">
+					<input id="singleFileUploadInput" type="file" name="file"
+						class="file-input" required />
+					<button type="submit" class="primary submit-btn">Upload</button>
+				</form>
+			</div>
+
+		</div>
+	</div>
+	<script src="/js/main.js"></script>
+</body>
+</html>
